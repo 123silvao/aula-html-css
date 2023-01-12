@@ -1,0 +1,6 @@
+.cardapio{/* estilizando class="cardapio" */
+    list-style-type: lower-alpha;
+}
+.cardapio > li{
+    list-style-type:none;
+}

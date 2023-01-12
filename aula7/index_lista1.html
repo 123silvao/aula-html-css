@@ -1,0 +1,90 @@
+<!-- [Ctrl][;]  -->
+<!-- [!][tab] inclui a estrutura básica de página HTML -->
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Listas</title>
+    <!-- link[tab] ou link:css[tab] -->
+    <link rel="stylesheet" href="style_lista.css">
+</head>
+<body>
+    <h1>Listas</h1>
+    <h2>Lista Ordenada</h2>
+    <!-- ol>li*4[tab] criar uma lista ordenada com 4 itens -->
+    <!-- ol>li*4{Item $}[tab] -->
+    <ol>
+        <li>Item 1</li>
+        <li>Item 2</li>
+        <li>Item 3</li>
+        <li>Item 4</li>
+    </ol>
+    <h2>Lista de Mercado</h2>
+    <ul>
+        <li>TV</li>
+        <li>Pão</li>
+        <li>Leite</li>
+        <li>Pipoca</li>
+        <li>Refri</li>
+    </ul>
+    <h2>Cardápio</h2>
+    <!-- [windows][.] insere emojis -->
+    <ol class="cardapio">
+        <li>🍕Pizza</li>
+        <ul>
+            <li>Atum</li>
+            <li>3 Queijos</li>
+            <li>Portuguesa</li>
+            <li>Catufrango</li>
+        </ul>
+        <li>🍔Lanche</li>
+        <ul>
+            <li>Misto Quente</li>
+            <li>Americano</li>
+            <li>X-Tudo</li>
+            <li>X-Bacon</li>
+        </ul>
+        <li>🥤Bebida</li>
+        <ul>
+            <li>Água</li>
+            <ul>
+                <li>Com Gás</li>
+                <li>Sem Gás</li>
+            </ul>
+            <li>Refri</li>
+            <ul>
+                <li>Coca-Cola</li>
+                <li>Fanta</li>
+            </ul>
+            <li>Suco</li>
+        </ul>
+    </ol>
+    <!-- 
+       1 Pizza
+           * Atum
+           * 3 Queijos
+           * Portuguesa
+           * Catufrango
+       2 Lanche
+            Misto Quente
+            Americano
+            X Tudo
+            X-Bacon
+       3 Bebida
+            Água
+            Refri
+            Suco
+     -->
+     <h2>Aula de Hoje</h2>
+     <details>
+        <summary>Lista Ordenada</summary>
+        <p>Lista ordenada mostra os itens dentro de uma sequencia</p>
+     </details>
+     <details>
+        <summary>Lista Não Ordenada</summary>
+        <p>Lista ordenada mostra os itens sem uma sequencia</p>
+     </details>
+</body>
+</html>
