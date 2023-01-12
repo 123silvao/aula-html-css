@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="pt-br"><!-- atributo="valor" -->
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Form</title>
+</head>
+<body>
+    <h1>Form</h1>
+    <form name="form1" method="post" action="http://hebertphp.awardspace.us/recebe.php" autocomplete="off">
+        <fieldset>
+            <legend>Cadastro</legend>
+            <label for="login">Login</label> <input type="text" name="login" id="login" required placeholder="Digite o seu login" value="" autofocus><span>*</span><br>
+            <label for="senha">Senha</label>  <input type="password" name="senha" id="senha" required placeholder="Digite a sua senha"><span>*</span><br>
+            <!-- Criar um campo para digitar o RA -->
+            <label for="ra">RA</label> <input type="number" name="ra" id="ra" required placeholder="Digite o seu RA"><span>*</span><br>
+            <input type="hidden" name="local" value="São Paulo"> 
+        </fieldset>
+       <fieldset>
+            <legend>Lista de Compra</legend> 
+            <input type="checkbox" name="arroz" id="arroz"> <label for="arroz">Arroz</label> <br>
+            <input type="checkbox" name="feijao" id="feijao" checked> <label for="feijao">Feijão</label> <br>
+            <input type="checkbox" name="nutella" id="nutella"> <label for="nutella">Nutella</label> <br>
+       </fieldset>
+       <fieldset>
+            <legend>Qual a disciplina de sexta-feira?</legend> 
+            <input type="radio" name="disciplina" id="arq" value="Arquitetura"> Arquitetura <br>
+            <input type="radio" name="disciplina" id="pfe" value="Front-End"> Front-End <br>
+            <input type="radio" name="disciplina" id="dpi" value="Desenvolvimento para Internet"> Desenvolvimento para Internet<br>
+            <input type="radio" name="disciplina" id="idc" value="Internet das coisas"> Internet das coisas<br>
+       </fieldset>
+       <fieldset>
+            <legend>UF</legend> 
+            Selecione o UF
+            <select name="uf">
+                <option value="SP">São Paulo</option>
+                <option value="RJ" selected>Rio de Janeiro</option>
+                <option value="MG">Minas Gerais</option>
+            </select>
+       </fieldset>
+       <fieldset>
+            <legend>Enviara uma mensagem de e-mail</legend> 
+            <!-- 
+                Criar dois campos, um para para o e-mail
+                                 outro campo para a mensagem do e-mail.
+
+             -->
+             <label for="email">Email</label><input type="email" name="email" id="email" placeholder="Digite seu e-mail"><br>
+             Mensagem <textarea name="msg" id="msg"></textarea>
+       </fieldset>
+       <input type="submit" value="Validar"> <input type="reset" value="Limpar">
+        <p>* Campo obrigatório</p>
+        
+    </form>
+</body>
+</html>
