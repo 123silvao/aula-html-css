@@ -1,0 +1,50 @@
+*{
+    margin:0;
+    padding:0;
+    box-sizing: border-box;
+}
+h1{
+    margin-bottom:50px;
+    animation: flutua 5s ease-in-out infinite;
+}
+.move{
+    width: 100px;
+    height: 100px;
+    transform: translate(-150px);
+    background: blueviolet;
+    animation-name: anima;
+    animation-duration: 12s;
+    animation-timing-function: ease-in-out;
+    animation-delay: 0.4s;
+    animation-iteration-count: infinite; 
+    animation-direction:alternate;
+}
+.mostra{
+    border: 1px solid red;
+    height: 100px;
+}
+.mostra p{
+    display: none;
+}
+
+@keyframes anima {
+    from {
+        transform: translateX(-150px);
+    }
+    to {
+        transform: translateX(700px);
+        background-color: cyan;
+        border-radius: 50%;
+    }
+}
+@keyframes flutua {
+    0%{
+        transform: translateY(0px);
+    }
+    50%{
+        transform: translateY(10px);
+    }
+    100%{
+        transform: translateY(0px);
+    }
+  }
